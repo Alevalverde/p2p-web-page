@@ -18,13 +18,7 @@ const Cursor = () => {
   }, []);
 
   return (
-    <motion.img
-      src="../../../public/usdt.png" // Reemplaza con la ruta de tu imagen
-      alt="Custom Cursor"
-      className="cursor"
-      animate={{ x: position.x + 10, y: position.y + 10 }}
-      transition={{ type: 'spring', stiffness: 800, damping: 30 }} // Mantén la configuración de la transición si la necesitas
-    />
+    <motion.img src="/usdt.png" alt="Custom Cursor" className="cursor" animate={{ x: position.x, y: position.y }} />
   );
 };
 

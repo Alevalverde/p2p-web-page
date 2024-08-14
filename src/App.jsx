@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './app.scss';
 import Contact from './components/contact/Contact';
 import Cursor from './components/cursor/Cursor';
@@ -9,27 +8,6 @@ import Portfolio from './components/portfolio/Portfolio';
 import Services from './components/services/Services';
 
 const App = () => {
-  useEffect(() => {
-    const smoothScroll = (targetPosition) => {
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth"
-      });
-    };
-
-    const handleScroll = () => {
-      setTimeout(() => {
-        smoothScroll(window.scrollY);  // Ajusta la velocidad del desplazamiento
-      }, 5000);  // Controla la velocidad de la transición
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <div>
       <Cursor />

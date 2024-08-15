@@ -43,6 +43,8 @@
     height: 100%;
     position: absolute;
     z-index: 2;
+    filter: drop-shadow(0 0 100px rgba(255, 255, 0, 1));
+
     @include mobile {
       background-size: contain;
       background-repeat: no-repeat;

@@ -3,7 +3,7 @@
 .hero {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(180deg, #faffd2, #700000);
+  background: linear-gradient(180deg, #700000, #faffd2);
   position: relative;
 
   .wrapper {
@@ -30,13 +30,14 @@
 
       h2 {
         font-size: 30px;
-        color: rebeccapurple;
+        color: rgb(247, 238, 187);
         letter-spacing: 7px;
       }
 
       h1 {
         font-size: 88px;
         color: rgb(68, 68, 68);
+        text-shadow: 2px 2px 0px rgb(247, 238, 187);
 
         @include mobile {
           font-size: 36px;

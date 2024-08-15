@@ -30,10 +30,15 @@
     h1 {
       font-size: 100px;
       line-height: 88px;
+      color: white;
 
       @include mobile {
         font-size: 36px;
       }
+    }
+
+    h2 {
+      color: yellow;
     }
 
     span {

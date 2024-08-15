@@ -1,7 +1,11 @@
-@import "../../app.scss";
+@import '../../app.scss';
 
 .portfolio {
   position: relative;
+
+  h1 {
+    text-shadow: 2px 2px 0px white, -2px -2px 0px white, -2px 2px 0px white, 2px -2px 0px white;
+  }
 
   .progress {
     position: sticky;
@@ -11,7 +15,8 @@
     text-align: center;
     color: rgb(68, 68, 68);
     font-size: 36px;
-    z-index: 5;
+    justify-content: center;
+    display: flex;
 
     @include mobile {
       padding-top: calc(100vh - 100px);
@@ -19,8 +24,9 @@
     }
 
     .progressBar {
-      height: 10px;
+      height: 90px;
       background-color: white;
+      border-radius: 20px;
     }
   }
 

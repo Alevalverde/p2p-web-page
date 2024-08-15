@@ -17,16 +17,13 @@ const Parallax = ({ type }) => {
 
   return (
     <div className="parallax" ref={ref}>
-      <motion.h1 style={{ y: yText, position: 'absolute', top: '5%' }}>
-        What We Do?
-      </motion.h1>
+      <motion.h1 style={{ y: yText, position: 'absolute', top: '5%' }}>What We Do?</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
         className="sun"
         style={{
           y: ySun,
           x: xSun,
-          backgroundImage: `url(${'/bitcoin-sun.png'})`,
         }}
       ></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>

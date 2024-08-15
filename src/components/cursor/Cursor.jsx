@@ -18,7 +18,7 @@ const Cursor = () => {
   }, []);
 
   return (
-    <motion.img src="/usdt.png" alt="Custom Cursor" className="cursor" animate={{ x: position.x, y: position.y }} />
+    <motion.img alt="Custom Cursor" className="cursor" animate={{ x: position.x, y: position.y }} />
   );
 };
 

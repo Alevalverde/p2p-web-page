@@ -10,27 +10,23 @@ const Parallax = ({ type }) => {
     offset: ['start start', 'end start'],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ['0%', '500%']);
+  const yText = useTransform(scrollYProgress, [0, 1], ['0%', '700%']);
   const yBg = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
+  const ySun = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
+  const xSun = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
   return (
-    <div
-      className="parallax"
-      ref={ref}
-      style={{
-        background:
-          type === 'services'
-            ? 'linear-gradient(180deg, #111132, #0c0c1d)'
-            : 'linear-gradient(180deg, #111132, #505064)',
-      }}
-    >
-      <motion.h1 style={{ y: yText }}>What We Do?</motion.h1>
+    <div className="parallax" ref={ref}>
+      <motion.h1 style={{ y: yText, position: 'absolute', top: '5%' }}>
+        What We Do?
+      </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
-        className="planets"
+        className="sun"
         style={{
-          y: yBg,
-          backgroundImage: `url(${type === 'services' ? '/planets.png' : '/sun.png'})`,
+          y: ySun,
+          x: xSun,
+          backgroundImage: `url(${'/bitcoin-sun.png'})`,
         }}
       ></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>

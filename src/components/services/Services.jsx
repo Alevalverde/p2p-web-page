@@ -36,8 +36,8 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          Enfocados en tu crecimiento financiero
+          <br /> no te detengas
         </p>
         <hr />
       </motion.div>
@@ -45,14 +45,14 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            Quieres<motion.b whileHover={{color:"orange"}}> COMPRAR</motion.b> o
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"orange"}}>VENDER</motion.b> tus criptos?
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>COMPLETA</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -60,7 +60,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Quieres Vender WLD u otras criptos?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
@@ -73,7 +73,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Quieres comprar criptos?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
@@ -86,7 +86,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Tienes alguna consulta?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
@@ -99,7 +99,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Infórmate</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti

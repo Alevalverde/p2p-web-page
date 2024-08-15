@@ -9,8 +9,9 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color: rgb(68, 68, 68);
     font-size: 36px;
+    z-index: 5;
 
     @include mobile {
       padding-top: calc(100vh - 100px);

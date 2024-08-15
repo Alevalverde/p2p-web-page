@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const textVariants = {
   initial: {
-    x: -500,
+    x: -900,
     opacity: 0,
   },
   animate: {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 2,
       staggerChildren: 0.1,
     },
   },
@@ -49,7 +49,7 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>PABLO SANTIAGO</motion.h2>
           <motion.h1 variants={textVariants}>
-            Comercio P2P Criptomonedas
+            Comercio P2P
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             {/* <motion.button variants={textVariants}>

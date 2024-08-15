@@ -1,9 +1,9 @@
-@import "../../app.scss";
+@import '../../app.scss';
 
 .hero {
-  height: calc(100vh - 100px);
+  height: 100vh;
   overflow: hidden;
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: linear-gradient(180deg, #faffd2, #700000);
   position: relative;
 
   .wrapper {
@@ -12,11 +12,12 @@
     margin: auto;
 
     .textContainer {
-      width: 50%;
+      width: 70%;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: top;
+      padding-top: 10%;
       gap: 40px;
 
       @include mobile {
@@ -30,11 +31,12 @@
       h2 {
         font-size: 30px;
         color: rebeccapurple;
-        letter-spacing: 10px;
+        letter-spacing: 7px;
       }
 
       h1 {
         font-size: 88px;
+        color: rgb(68, 68, 68);
 
         @include mobile {
           font-size: 36px;
@@ -73,7 +75,7 @@
       bottom: 0;
     }
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -85,7 +87,7 @@
     font-size: 50vh;
     bottom: -120px;
     white-space: nowrap;
-    color: #ffffff09;
+    color: #faffd2a6;
     width: 50%;
     font-weight: bold;
   }

@@ -35,15 +35,14 @@ const Services = () => {
       animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-        <p>
+        <p style={{color: "white"}}>
           Enfocados en tu crecimiento financiero
-          <br /> no te detengas
+          <br /> ¡No te detengas!
         </p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
           <h1>
             Quieres<motion.b whileHover={{color:"orange"}}> COMPRAR</motion.b> o
           </h1>

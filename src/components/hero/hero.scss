@@ -3,8 +3,21 @@
 .hero {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(180deg, #700000, #faffd2);
+  background: linear-gradient(180deg, #1E5C94, #7eb6eb, #ffffff);
   position: relative;
+
+  .stars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('/stars.png');
+    background-size: cover;
+    background-position: center bottom;
+    z-index: 0;
+
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
 
   .wrapper {
     max-width: 1366px;
@@ -30,7 +43,7 @@
 
       h2 {
         font-size: 30px;
-        color: rgb(247, 238, 187);
+        color: rgb(250, 250, 250);
         letter-spacing: 7px;
       }
 

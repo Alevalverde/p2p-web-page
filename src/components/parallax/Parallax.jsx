@@ -11,13 +11,13 @@ const Parallax = ({ type }) => {
   });
 
   const yText = useTransform(scrollYProgress, [0, 1], ['0%', '700%']);
-  const yBg = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
+  const yStar = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
   const ySun = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
   const xSun = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 
   return (
     <div className="parallax" ref={ref}>
-      <motion.h1 style={{ y: yText, position: 'absolute', top: '5%' }}>What We Do?</motion.h1>
+      <motion.h1 style={{ y: yText, position: 'absolute', top: '5%' }}>Queremos hacerlo simple para vos</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
         className="sun"
@@ -26,7 +26,7 @@ const Parallax = ({ type }) => {
           x: xSun,
         }}
       ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      <motion.div style={{ x: yStar }} className="stars"></motion.div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
-@import "../../app.scss";
+@import '../../app.scss';
 
 .parallax {
-  background: linear-gradient(180deg, #faffd2, #700000);
+  background: linear-gradient(180deg, #ffffff, #013a70);
   width: 100%;
   height: 100%;
   position: relative;
@@ -22,7 +22,7 @@
   }
 
   .mountains {
-    background-image: url("/mountains.png");
+    background-image: url('/mountains.png');
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -36,23 +36,25 @@
     }
   }
   .sun {
-    background-image: url("/bitcoin-sun.png");
-    background-size: 80%; /* reduce el tamaño de la imagen a 80% */
+    background-image: url('/bitcoin-sun.png');
+    background-size: 80%;
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 2;
-    filter: drop-shadow(0 0 50px rgba(255, 255, 0, 1));
-  
+    filter: drop-shadow(0 0 0px rgba(255, 255, 0, 1));
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+
     @include mobile {
       background-size: 60%; /* reduce el tamaño de la imagen a 60% en dispositivos móviles */
       background-repeat: no-repeat;
     }
   }
   .stars {
-    background-image: url("/stars.png");
+    background-image: url('/stars.png');
     background-size: cover;
     background-position: bottom;
     width: 100%;

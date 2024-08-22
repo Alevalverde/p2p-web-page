@@ -20,7 +20,7 @@ const App = () => {
       <section>
         <Services />
       </section>
-      <Portfolio />
+      {/* <Portfolio /> */}
       <section id="Contact">
         <Contact />
       </section>
